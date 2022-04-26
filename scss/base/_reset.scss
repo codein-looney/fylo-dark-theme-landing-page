@@ -1,0 +1,29 @@
+@use '../sass-utils/variables' as *;
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+    .wrapper {
+        height: 100vh;
+        background-color: $Dark-Blue2;
+        background-image: url(/images/bg-curvy-desktop.svg);
+        font-family: 'Open Sans', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
