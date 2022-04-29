@@ -16,10 +16,10 @@ h6 {
 body {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background-color: $Dark-Blue2;
 
     .wrapper {
-        height: 100vh;
-        background-color: $Dark-Blue2;
+        height: 200vh;
         background-image: url(/images/bg-curvy-desktop.svg);
         font-family: 'Open Sans', sans-serif;
         background-repeat: no-repeat;
