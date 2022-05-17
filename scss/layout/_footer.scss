@@ -1,0 +1,52 @@
+@use '../sass-utils/variables' as *;
+
+.footer-primary {
+    height: 45vh;
+    padding: 12em 0 0 5em;
+    display: flex;
+    align-items: center;
+    background: $Dark-Blue3;
+
+    // outline: 1px solid red; // TEST
+
+    .logo-secondary {
+        position: absolute;
+        top: 450%;
+        left: 10%;
+        // outline: 1px solid red; // TEST
+
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+
+        // outline: 1px solid red; // TEST
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            max-width: 28%;
+
+        // outline: 1px solid red; // TEST
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 1em;
+    
+            // outline: 1px solid red; // TEST
+
+        }
+
+        .socials {
+            display: inline-flex;
+            gap: 1em;
+        }
+    }
+}

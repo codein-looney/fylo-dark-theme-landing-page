@@ -1,0 +1,51 @@
+@use '../sass-utils/variables' as *;
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 400%;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    // outline: 1px solid red; // TEST
+
+    form {
+        padding: 2em 3em 2em 3em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #1C2230;
+        gap: 1.5em;
+    
+        // outline: 1px solid red; // TEST
+    
+        .form-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            text-align: center;
+
+            .form-subtitle {
+                margin: 0 auto;
+                font-size: .8em;
+            }
+        }
+    
+        .cta {
+            width: 100%;
+            gap: 1.5em;
+            
+            // outline: 1px solid red; // TEST
+
+            input {
+                width: 60%;
+                padding-left: 2em;
+                border-radius: 2em;
+                border: none;
+            }
+        }
+    }
+}

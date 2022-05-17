@@ -28,7 +28,7 @@ body .wrapper {
   background-position: center;
 }
 
-.cta-btn {
+.btn-primary {
   padding: 1.2em 6.5em;
   border-radius: 2em;
   border: none;
@@ -37,7 +37,20 @@ body .wrapper {
   cursor: pointer;
   font-size: 0.9em;
 }
-.cta-btn:hover {
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  padding: 0.9em 2em;
+  border-radius: 2em;
+  border: none;
+  color: white;
+  background-image: linear-gradient(150deg, #65e2d9, #339ecc);
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.btn-secondary:hover {
   opacity: 0.9;
 }
 
@@ -55,6 +68,79 @@ body .wrapper {
 .cover-secondary {
   width: 75%;
   height: auto;
+}
+
+.footer-primary {
+  height: 45vh;
+  padding: 12em 0 0 5em;
+  display: flex;
+  align-items: center;
+  background: #0b1523;
+}
+.footer-primary .logo-secondary {
+  position: absolute;
+  top: 450%;
+  left: 10%;
+}
+.footer-primary .footer-content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.footer-primary .footer-content .location {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 28%;
+}
+.footer-primary .footer-content ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1em;
+}
+.footer-primary .footer-content .socials {
+  display: inline-flex;
+  gap: 1em;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 400%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+.form-container form {
+  padding: 2em 3em 2em 3em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1C2230;
+  gap: 1.5em;
+}
+.form-container form .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+.form-container form .form-content .form-subtitle {
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+.form-container form .cta {
+  width: 100%;
+  gap: 1.5em;
+}
+.form-container form .cta input {
+  width: 60%;
+  padding-left: 2em;
+  border-radius: 2em;
+  border: none;
 }
 
 .wrapper .cta {
@@ -150,13 +236,12 @@ body .wrapper {
   display: flex;
   gap: 2.5em;
   justify-content: center;
-  outline: 1px solid red;
 }
 .wrapper .container .box {
+  margin: 7em 0 21em 0;
   padding: 2.5em 1.5em 1.5em 1.5em;
-  background-color: #202a3c;
+  background: #202a3c;
   border-radius: 0.5em;
-  outline: 1px solid red;
 }
 .wrapper .container .box .review {
   margin-bottom: 2em;
@@ -176,8 +261,14 @@ body .wrapper {
 .wrapper .container .box .author .credentials .enterprise {
   color: #B3BEC8;
 }
+.wrapper .container .quote {
+  position: absolute;
+  transform: translate(-1130%, 170%);
+}
 .wrapper .container .box1 {
+  position: relative;
   margin-left: 5em;
+  z-index: 1;
 }
 .wrapper .container .box3 {
   margin-right: 5em;

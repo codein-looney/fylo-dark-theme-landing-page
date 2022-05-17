@@ -108,16 +108,13 @@
     gap: 2.5em;
     justify-content: center;
 
-    outline: 1px solid red; // REMOVE
-
     .box {
+        margin: 7em 0 21em 0;
         padding: 2.5em 1.5em 1.5em 1.5em;
-        background-color: $Dark-Blue4;
+        background: $Dark-Blue4;
         border-radius: .5em;
 
-         outline: 1px solid red; // REMOVE
-
-         .review {
+        .review {
              margin-bottom: 2em;
          }
 
@@ -133,7 +130,7 @@
 
              .credentials {
                  font-size: .7em;
-                 
+
                  .enterprise {
                      color: #B3BEC8;
                  }
@@ -141,8 +138,15 @@
          }
     }
 
+    .quote {
+        position: absolute;
+        transform: translate(-1130%, 170%);
+    }
+
      .box1 {
+         position: relative; 
          margin-left: 5em;
+         z-index: 1;
      }
 
      .box3 {
