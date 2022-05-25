@@ -6,13 +6,29 @@
     justify-content: center;
     align-items: center;
 
-    .hero-unit .cover-primary {
+    @media screen and (max-width: 992px) {
+        height: 50vh;
+    }
+
+    .hero-unit {
         width: 100%;
+        display: flex;
         height: auto;
+        justify-content: center;
+
+        // outline: 1px solid red; // TEST
+
+        .cover-primary {
+            @media screen and (max-width: 992px) {
+                width: 90%;
+    
+                // outline: 1px solid red; // TEST
+            }
+        }
     }
 }
 
 .cover-secondary {
-    width: 75%;
+    width: 85%;
     height: auto;
 }

@@ -2,19 +2,26 @@
 
 .footer-primary {
     height: 45vh;
-    padding: 12em 0 0 5em;
+    padding-top: 8em;
     display: flex;
     align-items: center;
     background: $Dark-Blue3;
 
-    // outline: 1px solid red; // TEST
+    @media screen and (max-width: 992px) {
+        height: 100vh;
+        padding-top: 18em;
+
+    }
 
     .logo-secondary {
         position: absolute;
-        top: 450%;
-        left: 10%;
-        // outline: 1px solid red; // TEST
+        top: 460%;
+        left: 5.5%;
 
+        @media screen and (max-width: 992px) {
+            top: 457%;
+            left: 12%;
+        }
     }
 
     .footer-content {
@@ -22,16 +29,68 @@
         justify-content: center;
         justify-content: space-around;
 
-        // outline: 1px solid red; // TEST
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+         }
+
+         .location, .contact, .links {
+            padding-left: 2em;
+         }
 
         .location {
             display: flex;
-            flex-direction: column;
-            gap: 2em;
+            gap: 1em;
             max-width: 28%;
 
-        // outline: 1px solid red; // TEST
+            @media screen and (max-width: 992px) {
+                max-width: 85%;
+                font-size: 1.2em;
+                margin-bottom: 2em;
+            }
 
+            .location-icon {
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: .5em;
+            }           
+        }
+        
+        .contact {
+            display: flex;
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 5em;
+            }
+
+            .phone {
+                display: inline-flex;
+                align-items: center;
+                gap: 1em;
+            
+
+                .phone-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .email {
+                display: inline-flex;
+                align-items: center;
+                gap: 1em;
+
+                .email-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        .links {
+            @media screen and (max-width: 992px) {
+                margin-bottom: 3.5em;
+            }
         }
 
         ul {
@@ -39,14 +98,31 @@
             flex-direction: column;
             list-style: none;
             gap: 1em;
-    
-            // outline: 1px solid red; // TEST
-
         }
 
-        .socials {
-            display: inline-flex;
-            gap: 1em;
+            .socials {
+                // width: 100%;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                    margin-top: 2em;
+                    display: flex;
+                    justify-content: center;
+                    margin-botton: 3em;
+                }
+            
+            i {
+                gap: 1em;           
+                padding: 0.5em;
+                margin-left: 1em;
+                border: 1px solid #c2d3ff;
+                font-size: 1em;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:nth-child(1) {
+                    padding: 8px 11.2px;
+                }
+            }
         }
     }
 }

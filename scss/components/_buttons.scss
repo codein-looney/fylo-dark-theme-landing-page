@@ -15,13 +15,13 @@
 }
 
 .btn-secondary {
-    padding: .9em 2em;
+    padding: .9em 2em; 
     border-radius: 2em;
     border: none;
     color: white;
     background-image: linear-gradient(150deg, $Cyan, $Blue);
     cursor: pointer;
-    font-size: .9em;
+    font-size: .8em;
 
     &:hover {
         opacity: .9;

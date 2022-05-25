@@ -13,6 +13,11 @@
             max-width: 700px;
             font-size: 2.5em;
             line-height: 1.5em;
+
+            @media screen and (max-width: 992px) {
+                margin: 0 1em;
+                font-size: 1.8em;
+            }
         }
 
         .cta-subtitle {
@@ -21,6 +26,12 @@
             font-size: 1.2em;
             line-height: 1.5em;
             padding-bottom: 1.3em;
+
+            @media screen and (max-width: 992px) {
+                max-width: 335px;
+                font-size: 1em;
+                padding-bottom: 2em;
+            }
         }
     }
 }
@@ -33,6 +44,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5em;
 
+    @media screen and (max-width: 992px) {
+        grid-template-columns: unset;
+    }
+
     .col {
         text-align: center;
 
@@ -40,10 +55,14 @@
             margin-bottom: 1.3em;
             display: flex;
             justify-content: center;
+
+            @media screen and (max-width: 992px) {
+               margin-bottom: 2em;
+            }
         }
 
         .info-title {
-            margin-bottom: .3em;
+            margin-bottom: .5em;
         }
 
         .info-subtitle {
@@ -65,16 +84,34 @@
         display: flex;
         align-items: center;
         gap: 3em;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+            flex-direction: column;
+            margin: 5em 0 0 0;
+            gap: 0;
+
+      }
    
         .description {
             margin-top: 5em;
             display: flex;
             flex-direction: column;
             gap: 1em;
+
+
+            @media screen and (max-width: 992px) {
+                margin-left: 2em;
+            }
     
             .des-title {
                 max-width: 60%;
-                font-size: 2em;    
+                font-size: 2em;
+                
+                @media screen and (max-width: 992px) {
+                    max-width: 100%;
+                    font-size: 1.3em;
+                }
             }
 
             .des-subtitle {
@@ -108,11 +145,24 @@
     gap: 2.5em;
     justify-content: center;
 
+    @media screen and (max-width: 992px) {
+        padding-bottom:7em;
+        flex-direction: column;
+        gap: 1.5em;
+        
+        // outline: 1px solid red; // TEST
+    }
+
     .box {
         margin: 7em 0 21em 0;
         padding: 2.5em 1.5em 1.5em 1.5em;
         background: $Dark-Blue4;
         border-radius: .5em;
+
+        @media screen and (max-width: 992px) {
+            margin: 0 3em;
+            font-size: .8em;
+        }
 
         .review {
              margin-bottom: 2em;
@@ -126,10 +176,19 @@
              .profile {
                  width: 2em;
                  border-radius: 50%;
+
+                 @media screen and (max-width: 992px) {
+                     width: 2.3em;
+                 }
              }
 
              .credentials {
                  font-size: .7em;
+
+                 @media screen and (max-width: 992px) {
+                    font-size: .9em;
+
+                 }
 
                  .enterprise {
                      color: #B3BEC8;
@@ -147,9 +206,17 @@
          position: relative; 
          margin-left: 5em;
          z-index: 1;
+
+         @media screen and (max-width: 992px) {
+            margin: 0 3em;
+         }
      }
 
      .box3 {
         margin-right: 5em;
+
+        @media screen and (max-width: 992px) {
+            margin: 0 3em 21em 3em;
+        }
     }
 }

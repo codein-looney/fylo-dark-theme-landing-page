@@ -7,8 +7,15 @@
     top: 400%;
     right: 50%;
     transform: translate(50%, 50%);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 
-    // outline: 1px solid red; // TEST
+    outline: 1px solid red; // TEST
+
+        @media screen and (max-width: 992px) {
+                width: 90%;
+                height: 40%;
+                top: 380%;
+        }
 
     form {
         padding: 2em 3em 2em 3em;
@@ -19,8 +26,15 @@
         align-items: center;
         background: #1C2230;
         gap: 1.5em;
+        border-radius: .1em;
+
     
-        // outline: 1px solid red; // TEST
+        outline: 1px solid red; // TEST
+
+            @media screen and (max-width: 992px) {
+                padding: 0;
+            justify-content: unset;
+            }
     
         .form-content {
             display: flex;
@@ -38,10 +52,15 @@
             width: 100%;
             gap: 1.5em;
             
-            // outline: 1px solid red; // TEST
+            outline: 1px solid red; // TEST
+
+            @media screen and (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+            }
 
             input {
-                width: 60%;
+                width: 50%;
                 padding-left: 2em;
                 border-radius: 2em;
                 border: none;

@@ -7,6 +7,10 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 992px) {
+        padding: 1.5em 0 0 1.5em;
+    }
+
     .nav {
         display: flex;
         list-style: none;
@@ -16,6 +20,11 @@ header {
             transition: .3s;
             cursor: pointer;
 
+            @media screen and (max-width: 992px) {
+                font-size: .9em;
+                margin-right: 2em;
+            }
+
             &:hover {
                 text-decoration: underline;
             }
@@ -24,5 +33,9 @@ header {
 
     .logo {
         cursor: pointer;
+
+        @media screen and (max-width: 992px) {
+            width: 120px;
+        }
     }
 }
