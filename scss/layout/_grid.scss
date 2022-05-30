@@ -120,7 +120,7 @@
     
             .information .info-link {
                 display: flex;
-                color: #3c9f8f;
+                color: whitesmoke;
                 text-decoration: none;
                 align-items: center;
     
@@ -148,9 +148,7 @@
     @media screen and (max-width: 992px) {
         padding-bottom:7em;
         flex-direction: column;
-        gap: 1.5em;
-        
-        // outline: 1px solid red; // TEST
+        gap: 1.5em;        
     }
 
     .box {

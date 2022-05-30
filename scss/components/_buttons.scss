@@ -15,6 +15,7 @@
 }
 
 .btn-secondary {
+    width: 100%;
     padding: .9em 2em; 
     border-radius: 2em;
     border: none;
@@ -22,6 +23,12 @@
     background-image: linear-gradient(150deg, $Cyan, $Blue);
     cursor: pointer;
     font-size: .8em;
+
+    @media screen and (max-width: 992px) {
+        margin: 0 auto;
+        width: 100%;
+        padding: 1.5em;
+    }
 
     &:hover {
         opacity: .9;

@@ -42,6 +42,7 @@ body .wrapper {
 }
 
 .btn-secondary {
+  width: 100%;
   padding: 0.9em 2em;
   border-radius: 2em;
   border: none;
@@ -49,6 +50,13 @@ body .wrapper {
   background-image: linear-gradient(150deg, #65e2d9, #339ecc);
   cursor: pointer;
   font-size: 0.8em;
+}
+@media screen and (max-width: 992px) {
+  .btn-secondary {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.5em;
+  }
 }
 .btn-secondary:hover {
   opacity: 0.9;
@@ -88,21 +96,22 @@ body .wrapper {
   display: flex;
   align-items: center;
   background: #0b1523;
+  color: #e9e2e2;
 }
 @media screen and (max-width: 992px) {
   .footer-primary {
-    height: 100vh;
+    height: 130vh;
     padding-top: 18em;
   }
 }
 .footer-primary .logo-secondary {
   position: absolute;
-  top: 460%;
+  top: 455%;
   left: 5.5%;
 }
 @media screen and (max-width: 992px) {
   .footer-primary .logo-secondary {
-    top: 457%;
+    top: 592%;
     left: 12%;
   }
 }
@@ -163,10 +172,16 @@ body .wrapper {
   width: 16px;
   height: 16px;
 }
+.footer-primary .footer-content .links {
+  cursor: pointer;
+}
 @media screen and (max-width: 992px) {
   .footer-primary .footer-content .links {
     margin-bottom: 3.5em;
   }
+}
+.footer-primary .footer-content .links li:hover {
+  color: white;
 }
 .footer-primary .footer-content ul {
   display: flex;
@@ -192,6 +207,9 @@ body .wrapper {
   border-radius: 50%;
   cursor: pointer;
 }
+.footer-primary .footer-content .socials i:hover {
+  color: #65e2d9;
+}
 .footer-primary .footer-content .socials i:nth-child(1) {
   padding: 8px 11.2px;
 }
@@ -204,18 +222,15 @@ body .wrapper {
   right: 50%;
   transform: translate(50%, 50%);
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .form-container {
     width: 90%;
-    height: 40%;
-    top: 380%;
+    top: 500%;
   }
 }
 .form-container form {
   padding: 2em 3em 2em 3em;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,12 +238,13 @@ body .wrapper {
   background: #1C2230;
   gap: 1.5em;
   border-radius: 0.1em;
-  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .form-container form {
-    padding: 0;
+    padding: unset;
     justify-content: unset;
+    padding: 2.5em 1em 3em 1em;
+    border-radius: 0.5em;
   }
 }
 .form-container form .form-content {
@@ -241,15 +257,21 @@ body .wrapper {
   margin: 0 auto;
   font-size: 0.8em;
 }
+@media screen and (max-width: 992px) {
+  .form-container form .form-content .form-subtitle {
+    font-size: 0.9em;
+    max-width: 83%;
+  }
+}
 .form-container form .cta {
   width: 100%;
   gap: 1.5em;
-  outline: 1px solid red;
 }
 @media screen and (max-width: 992px) {
   .form-container form .cta {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
 .form-container form .cta input {
@@ -257,6 +279,13 @@ body .wrapper {
   padding-left: 2em;
   border-radius: 2em;
   border: none;
+}
+@media screen and (max-width: 992px) {
+  .form-container form .cta input {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.3em;
+  }
 }
 
 .wrapper .cta {
@@ -375,7 +404,7 @@ body .wrapper {
 }
 .wrapper .container .provider .description .information .info-link {
   display: flex;
-  color: #3c9f8f;
+  color: whitesmoke;
   text-decoration: none;
   align-items: center;
 }

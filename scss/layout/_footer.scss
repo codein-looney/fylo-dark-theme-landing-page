@@ -6,20 +6,21 @@
     display: flex;
     align-items: center;
     background: $Dark-Blue3;
+    color: rgb(233, 226, 226);
 
     @media screen and (max-width: 992px) {
-        height: 100vh;
+        height: 130vh;
         padding-top: 18em;
 
     }
 
     .logo-secondary {
         position: absolute;
-        top: 460%;
+        top: 455%;
         left: 5.5%;
 
         @media screen and (max-width: 992px) {
-            top: 457%;
+            top: 592%;
             left: 12%;
         }
     }
@@ -88,8 +89,14 @@
         }
 
         .links {
+            cursor: pointer;
+            
             @media screen and (max-width: 992px) {
                 margin-bottom: 3.5em;
+            }
+
+            li:hover {
+                color: white;
             }
         }
 
@@ -101,7 +108,6 @@
         }
 
             .socials {
-                // width: 100%;
                 @media screen and (max-width: 992px) {
                     width: 100%;
                     margin-top: 2em;
@@ -119,6 +125,10 @@
                 border-radius: 50%;
                 cursor: pointer;
 
+                &:hover {
+                    color: $Cyan;
+                }
+                
                 &:nth-child(1) {
                     padding: 8px 11.2px;
                 }
